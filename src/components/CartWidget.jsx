@@ -5,9 +5,7 @@ import { HiOutlineShoppingCart } from "react-icons/hi";
 
 const CartWidget = () => {  
 
-  const [contador, setContador] = useState(0)
-
-  console.log(contador)
+  const [contador] = useState(0)
 
 
   return (

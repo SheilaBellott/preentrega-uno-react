@@ -11,3 +11,26 @@
     font-size: 3rem;
     text-align: center;
 }
+.card-body{
+    align-items: center;
+    
+}
+.titulo{
+    text-align: center;
+}
+.card{
+    margin-top: 20px;
+    justify-content: space-evenly !important;
+    align-content: center !important;
+    flex-wrap: wrap !important;
+    
+    
+}
+.ver-detalle{
+    justify-content: space-evenly !important;
+    margin-bottom: 20px;
+}
+.detalle{
+    color: rgba(255, 0, 0, 0.912);
+    border-radius: 20px;
+}

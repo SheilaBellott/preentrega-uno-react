@@ -1,12 +1,10 @@
 import React from 'react'
-import ItemList from './ItemList'
+import ItemDetail from './ItemDetail'
 import { useParams } from 'react-router-dom'
 
-
-
-const ItemListContainer = () => {
-
-  const {categoriaId} = useParams()
+const ItemDetailContainer = () => {
+  
+  const { productoId } = useParams()
 
   const productos = [
     {id:1, titulo:"zapatero", descripcion:  "descripcion de producto", precio:1200, categoria: "zapatero"},
@@ -15,10 +13,8 @@ const ItemListContainer = () => {
     {id:4, titulo:"mesa", descripcion:  "descripcion de producto", precio:1200, categoria: "Mesas"},
     {id:5, titulo:"silla", descripcion: "descripcion de producto", precio:1200, categoria: "Sillas"},
     {id:6, titulo:"silla", descripcion: "descripcion de producto", precio:1200, categoria: "Sillas"}
-    
   ]
   const mostrarProductos = new Promise((resolve,reject)=>{
-    
     if(productos.length > 0){
       setTimeout(() => {
         resolve(productos)
@@ -27,24 +23,26 @@ const ItemListContainer = () => {
       reject("No se obtuvieron productos")
     }
   })
+
   mostrarProductos
   .then((resultado) => {
+
   })
   .catch((resultado)=> {
     console.log(error)
   })
-    
-
-const productosFiltrados = productos.filter ((producto) => producto.categoria == categoriaId)
-console.log(productosFiltrados)
-  return (
+  
+  const productoFiltrado = productos.find ((producto) => producto.id == productoId)
+   return(
     <div>
-     
-      {
-      categoriaId ? <ItemList productos={productosFiltrados}/> : <ItemList productos={productos}/>
-      }
+      <ItemDetail
+      producto= {productoFiltrado}
+      />
     </div>
-  )
+   )
+
+
+
 }
 
-export default ItemListContainer
+export default ItemDetailContainer
