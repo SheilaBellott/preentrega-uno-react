@@ -9,12 +9,12 @@ const ItemListContainer = () => {
   const {categoriaId} = useParams()
 
   const productos = [
-    {id:1, titulo:"zapatero", descripcion:  "descripcion de producto", precio:1200, categoria: "zapatero"},
-    {id:2, titulo:"zapatero", descripcion: "descripcion de producto", precio:1200, categoria: "zapatero"},
-    {id:3, titulo:"mesa", descripcion: "descripcion de producto", precio:1200, categoria: "Mesas"},
-    {id:4, titulo:"mesa", descripcion:  "descripcion de producto", precio:1200, categoria: "Mesas"},
-    {id:5, titulo:"silla", descripcion: "descripcion de producto", precio:1200, categoria: "Sillas"},
-    {id:6, titulo:"silla", descripcion: "descripcion de producto", precio:1200, categoria: "Sillas"}
+    {id:1, titulo:"zapatero", descripcion:  "descripcion de producto", precio:1200, categoria: "Zapatero"},
+    {id:2, titulo:"zapatero", descripcion: "descripcion de producto", precio:1200, categoria: "Zapatero"},
+    {id:3, titulo:"mesa", descripcion: "descripcion de producto", precio:1200, categoria: "Mesa"},
+    {id:4, titulo:"mesa", descripcion:  "descripcion de producto", precio:1200, categoria: "Mesa"},
+    {id:5, titulo:"silla", descripcion: "descripcion de producto", precio:1200, categoria: "Silla"},
+    {id:6, titulo:"silla", descripcion: "descripcion de producto", precio:1200, categoria: "Silla"}
     
   ]
   const mostrarProductos = new Promise((resolve,reject)=>{

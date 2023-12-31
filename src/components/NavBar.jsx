@@ -33,15 +33,15 @@ const NavBar = () => {
 
         <MenuList pl="10px">
           
-          <Link to={'/categoria/mesas'}>
+          <Link to={'/categoria/Mesa'}>
           <MenuItem pl="15px" pr="1.1rem">mesas</MenuItem>
           </Link>
           
-          <Link to={'/categoria/zapateros'}>
+          <Link to={'/categoria/Zapatero'}>
           <MenuItem pl="15px" pr="1.1rem">zapatero</MenuItem>
           </Link>
 
-          <Link to={'/categoria/sillas'}>
+          <Link to={'/categoria/Silla'}>
           <MenuItem pl="15px" pr="1.1rem">sillas</MenuItem>
           </Link>      
 
