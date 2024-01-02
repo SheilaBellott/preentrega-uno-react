@@ -22,13 +22,13 @@ const ItemCount = () => {
 
   return (
     <div>
-        <Button borderRadius={"10px"}  onClick ={restar}>
+        <Button  className='calculadora' borderRadius={"10px"}  onClick ={restar}>
          -
         </Button>  
-        <Button borderRadius={"5px"} >
-           Agregar al carrito{contador}
+        <Button className='agregar' borderRadius={"5px"} >
+           Agregar al carrito {contador}
        </Button>
-       <Button borderRadius={"10px"}   onClick ={sumar}>
+       <Button className='calculadora' borderRadius={"10px"}   onClick ={sumar}>
        +
        </Button>
     </div>

@@ -8,7 +8,7 @@ const ItemDetail = ({producto}) => {
 
 
   return (
-    <Card maxW='sm'>
+    <Card maxW='sm' className='card-detail'>
   <CardBody>
     <Image width={"20rem"}
       src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
@@ -20,14 +20,14 @@ const ItemDetail = ({producto}) => {
       <Text>
         {producto.descripcion}
       </Text>
-      <Text color='blue.600' fontSize='2xl'>
+      <Text className='detail-precio'>
         {producto.precio}
       </Text>
     </Stack>
   </CardBody>
   <Divider />
   <CardFooter>
-    <ButtonGroup spacing='2'>
+    <ButtonGroup className='contador'>
       <ItemCount/>
     </ButtonGroup>
   </CardFooter>
