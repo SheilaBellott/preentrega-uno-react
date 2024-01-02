@@ -25,18 +25,19 @@ const NavBar = () => {
       <h1 className="tittle-cell">FG</h1>
       <h2 className="tittle-infinity">Muebleria</h2>
       <Link to={`/`}>
-      <p className="nav-p">inicio</p>
+      <p className="nav-p"  >inicio</p>
       </Link>
       <p className="nav-p">nosotros</p>
-
-    <Menu>
-  <MenuButton >
-    Actions
+<div className='menu-nav'>
+    <Menu >
+  
+  <MenuButton border={'none'} className='nav-p-color'   >
+    Categorias
   </MenuButton>
-  <MenuList>
+  <MenuList >
 
   <Link to={'/categoria/Mesa'}>
-<MenuItem pl="15px" pr="1.1rem">Mesas</MenuItem>
+<MenuItem pl="15px" pr="1.1rem" >Mesas</MenuItem>
 </Link>
 
 <Link to={'/categoria/Zapatero'}>
@@ -52,10 +53,11 @@ const NavBar = () => {
 </Menu>
 
     <p className="nav-p">contacto</p>
-    <Input ml="33rem" width={"10%"} height={"10%"} placeholder='Buscar productos' />
+    <Input className='input'  width={"10rem"} height={"10%"} placeholder='Buscar productos' />
    
-    <CartWidget />
+    <CartWidget/>
   
+</div>
     </div>
     
   )

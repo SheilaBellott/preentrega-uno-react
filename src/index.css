@@ -1,8 +1,18 @@
 .nav-p{
+    padding-left: 25px;
+    
+}
+.nav-p-color{
     padding-left: 20px;
+    color: red;
+    background-color: #FFFFFF;
+    font-size: 18px;
 }
 .nav-cart{
-    padding-left:20px;
+    position: relative;
+    top:20px;
+    left: 205%;
+
 }
 .tittle-cell{
     color: red;
@@ -70,5 +80,24 @@
 }
 
 
+.nav-bar{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    
+   
+
+}
+.menu-nav{
+    display: flex; 
+    
+}
 
 
+
+.input{
+    
+    position: relative;
+    top:20px;
+    left: 200%;
+}
