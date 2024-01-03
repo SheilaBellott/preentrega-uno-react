@@ -24,7 +24,7 @@ const NavBar = () => {
 
       <h1 className="tittle-cell">FG</h1>
       <h2 className="tittle-infinity">Muebleria</h2>
-      <Link to={`/`}>
+      <Link to={`/`} >
       <p className="nav-p"  >inicio</p>
       </Link>
       <p className="nav-p">nosotros</p>
