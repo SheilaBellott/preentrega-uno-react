@@ -34,7 +34,7 @@
     background-color: #FF0000;
     width: 20rem;
     border-radius: 20px;
-    margin-left: 40%;
+   
 
     
 }
@@ -55,7 +55,7 @@
     width: 20rem;
     border-radius: 10px;
  
-    margin-left: 40%;
+   
  
 }
 .detail-precio{
@@ -100,4 +100,7 @@
     position: relative;
     top:20px;
     left: 200%;
+}
+.flex-app{
+justify-content: space-around;
 }
