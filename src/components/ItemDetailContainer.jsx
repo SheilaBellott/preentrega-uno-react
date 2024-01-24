@@ -7,12 +7,12 @@ const ItemDetailContainer = () => {
   const { productoId } = useParams()
 
   const productos = [
-    {id:1, titulo:"zapatero", descripcion:  "descripcion de producto", precio:1200, categoria: "Zapatero"},
-    {id:2, titulo:"zapatero", descripcion: "descripcion de producto", precio:1200, categoria: "Zapatero"},
-    {id:3, titulo:"mesa", descripcion: "descripcion de producto", precio:1200, categoria: "Mesa"},
-    {id:4, titulo:"mesa", descripcion:  "descripcion de producto", precio:1200, categoria: "Mesa"},
-    {id:5, titulo:"silla", descripcion: "descripcion de producto", precio:1200, categoria: "Silla"},
-    {id:6, titulo:"silla", descripcion: "descripcion de producto", precio:1200, categoria: "Silla"}
+    {id:1, titulo:"zapatero x3", descripcion:  "descripcion de producto", precio:1600, categoria: "Zapateros"},
+    {id:2, titulo:"zapatero x6", descripcion: "descripcion de producto", precio:2200, categoria: "Zapateros"},
+    {id:3, titulo:"mesa de 120cm", descripcion: "descripcion de producto", precio:3200, categoria: "Mesas"},
+    {id:4, titulo:"mesa de 140cm", descripcion:  "descripcion de producto", precio:4100, categoria: "Mesas"},
+    {id:5, titulo:"silla de pino", descripcion: "descripcion de producto", precio:1000, categoria: "Sillas"},
+    {id:6, titulo:"silla capitone", descripcion: "descripcion de producto", precio:3900, categoria: "Sillas"}
   ]
   const mostrarProductos = new Promise((resolve,reject)=>{
     if(productos.length > 0){

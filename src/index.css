@@ -2,6 +2,11 @@
     padding-left: 25px;
     
 }
+a{
+    text-decoration: none;
+    color: #000000;
+    
+}
 .nav-p-color{
     padding-left: 20px;
     color: red;
@@ -13,6 +18,9 @@
     top:20px;
     left: 205%;
 
+}
+.menu-list{
+    z-index: 1000 !important;
 }
 .tittle-cell{
     color: red;
@@ -29,7 +37,7 @@
     text-align: center;
 }
 .card{
-    margin-top: 20px;
+    margin: 20px;
     
     background-color: #FF0000;
     width: 20rem;
@@ -103,4 +111,12 @@
 }
 .flex-app{
 justify-content: space-around;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    margin-left:8rem ;
+    margin-right: 8rem;
+  
 }

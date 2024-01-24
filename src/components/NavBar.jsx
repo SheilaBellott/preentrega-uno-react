@@ -34,17 +34,17 @@ const NavBar = () => {
   <MenuButton border={'none'} className='nav-p-color'   >
     Categorias
   </MenuButton>
-  <MenuList >
+  <MenuList className='menu-list'>
 
-  <Link to={'/categoria/Mesa'}>
+  <Link to={'/categoria/Mesas'}>
 <MenuItem pl="15px" pr="1.1rem" >Mesas</MenuItem>
 </Link>
 
-<Link to={'/categoria/Zapatero'}>
-<MenuItem pl="15px" pr="1.1rem">Zapateros</MenuItem>
+<Link to={'/categoria/Zapateros'}>
+<MenuItem pl="15px" pr="1.1rem" className='menu-list'>Zapateros</MenuItem>
 </Link>
 
-<Link to={'/categoria/Silla'}>
+<Link to={'/categoria/Sillas'}>
 <MenuItem pl="15px" pr="1.1rem">Sillas</MenuItem>
 </Link>
 
