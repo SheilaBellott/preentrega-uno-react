@@ -155,3 +155,13 @@ background-color: #000000;
     position: relative;
     top: 5px;
 }
+div:where(.swal2-container) div:where(.swal2-popup)
+{   
+    font-size: 15
+    
+    px;
+    width: 20rem;
+    color: #FFFFFF;
+    
+}
+  

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from '@chakra-ui/react';
+import Swal from 'sweetalert2';
 
 const ItemCount = ({ product, onAddToCart }) => {
   const [contador, setContador] = useState(0);
@@ -17,7 +18,18 @@ const ItemCount = ({ product, onAddToCart }) => {
   };
 
   const handleAgregarAlCarrito = () => {
-    onAddToCart(contador);
+    if (contador > 0) {
+      onAddToCart(contador);
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Producto agregado al carrito",
+        showConfirmButton: false,
+        timer: 1500,
+        background: 'none',
+        iconColor: 'red', 
+      });
+    }
   };
 
   return (
@@ -36,6 +48,8 @@ const ItemCount = ({ product, onAddToCart }) => {
 };
 
 export default ItemCount;
+
+
 
 
 

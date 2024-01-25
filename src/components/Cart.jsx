@@ -1,11 +1,14 @@
+
 import React, { useState, useEffect } from 'react';
 import { useShoppingCart } from '../context/ShoppingCartContext';
+import Formulario from './Formulario';
 
 const Cart = () => {
   const { getCartContents, setCart } = useShoppingCart();
   const cartContents = getCartContents();
   const [individualSums, setIndividualSums] = useState({});
   const [totalAmount, setTotalAmount] = useState(0);
+  const [mostrarFormulario, setMostrarFormulario] = useState(false);
 
   useEffect(() => {
     calculateTotals();
@@ -13,11 +16,13 @@ const Cart = () => {
 
   const calculateTotals = () => {
     const sums = {};
-    cartContents.forEach((item) => {
-      sums[item.productId] = item.quantity * item.precio;
-    });
+    let total = 0;
 
-    const total = Object.values(sums).reduce((accumulator, sum) => accumulator + sum, 0);
+    cartContents.forEach((item) => {
+      const subtotal = item.quantity * item.precio;
+      sums[item.productId] = subtotal;
+      total += subtotal;
+    });
 
     setIndividualSums(sums);
     setTotalAmount(total);
@@ -29,8 +34,7 @@ const Cart = () => {
   };
 
   const handleFinalizarCompra = () => {
-    // Lógica para finalizar la compra (puedes implementar tu propia lógica aquí)
-    console.log("Compra finalizada");
+    setMostrarFormulario(true); 
   };
 
   return (
@@ -51,15 +55,27 @@ const Cart = () => {
         </ul>
       )}
 
-
       {cartContents.length > 0 && <p>Monto total: ${totalAmount}</p>}
-
 
       {cartContents.length > 0 && (
         <button onClick={handleFinalizarCompra}>Finalizar Compra</button>
       )}
+
+      {mostrarFormulario && <Formulario productosSeleccionados={cartContents} />}
     </div>
   );
 };
 
 export default Cart;
+
+
+
+
+
+
+
+
+
+
+
+
