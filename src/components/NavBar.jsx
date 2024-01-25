@@ -6,10 +6,7 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,Input
+  Input
 } from '@chakra-ui/react'
 
 
@@ -36,15 +33,15 @@ const NavBar = () => {
   </MenuButton>
   <MenuList className='menu-list'>
 
-  <Link to={'/categoria/Mesas'}>
+  <Link to={'/categoria/mesas'}>
 <MenuItem pl="15px" pr="1.1rem" >Mesas</MenuItem>
 </Link>
 
-<Link to={'/categoria/Zapateros'}>
+<Link to={'/categoria/zapateros'}>
 <MenuItem pl="15px" pr="1.1rem" className='menu-list'>Zapateros</MenuItem>
 </Link>
 
-<Link to={'/categoria/Sillas'}>
+<Link to={'/categoria/sillas'}>
 <MenuItem pl="15px" pr="1.1rem">Sillas</MenuItem>
 </Link>
 

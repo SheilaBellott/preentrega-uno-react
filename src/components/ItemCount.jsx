@@ -17,7 +17,6 @@ const ItemCount = ({ product, onAddToCart }) => {
   };
 
   const handleAgregarAlCarrito = () => {
-    // Llamada a la función de devolución de llamada con la cantidad seleccionada
     onAddToCart(contador);
   };
 

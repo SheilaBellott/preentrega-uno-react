@@ -5,7 +5,6 @@ import ItemListContainer from './components/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer'
 import { Flex } from '@chakra-ui/react';
 import {ShoppingCartProvider} from './context/ShoppingCartContext'
-import ItemCount from './components/ItemCount'
 import Cart from './components/Cart'
 const App = () => {
 
