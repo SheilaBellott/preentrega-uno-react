@@ -34,7 +34,7 @@ const Cart = () => {
   };
 
   return (
-    <div>
+    <div className='cart'>
       <h2>Carrito</h2>
       {cartContents.length > 0 && (
         <ul>
@@ -43,8 +43,8 @@ const Cart = () => {
               <p>ID: {item.productId}</p>
               <p>Producto: {item.nombre}</p>
               <p>Cantidad: {item.quantity}</p>
-              <p>Precio unitario: {item.precio}</p>
-              <p>Subtotal: {individualSums[item.productId]}</p>
+              <p>Precio unitario: ${item.precio}</p>
+              <p>Subtotal: ${individualSums[item.productId]}</p>
               <button onClick={() => removeFromCart(item.productId)}>Eliminar</button>
             </li>
           ))}
@@ -52,7 +52,7 @@ const Cart = () => {
       )}
 
 
-      {cartContents.length > 0 && <p>Monto total: {totalAmount}</p>}
+      {cartContents.length > 0 && <p>Monto total: ${totalAmount}</p>}
 
 
       {cartContents.length > 0 && (

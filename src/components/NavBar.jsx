@@ -20,7 +20,7 @@ const NavBar = () => {
     <div className='nav-bar'>
 
       <h1 className="tittle-cell">FG</h1>
-      <h2 className="tittle-infinity">Muebleria</h2>
+      <h2 className="tittle-fg">Muebleria</h2>
       <Link to={`/`} >
       <p className="nav-p"  >inicio</p>
       </Link>
@@ -31,10 +31,10 @@ const NavBar = () => {
   <MenuButton border={'none'} className='nav-p-color'   >
     Categorias
   </MenuButton>
-  <MenuList className='menu-list'>
+  <MenuList zIndex="10" >
 
   <Link to={'/categoria/mesas'}>
-<MenuItem pl="15px" pr="1.1rem" >Mesas</MenuItem>
+<MenuItem pl="15px" pr="1.1rem" className='menu-list'>Mesas</MenuItem>
 </Link>
 
 <Link to={'/categoria/zapateros'}>
@@ -42,7 +42,7 @@ const NavBar = () => {
 </Link>
 
 <Link to={'/categoria/sillas'}>
-<MenuItem pl="15px" pr="1.1rem">Sillas</MenuItem>
+<MenuItem pl="15px" pr="1.1rem" className='menu-list'>Sillas</MenuItem>
 </Link>
 
 

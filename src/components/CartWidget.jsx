@@ -19,8 +19,8 @@ const CartWidget = () => {
       <div className="nav-cart">
         
         <Link to={isCartEmpty ? "/" : "/cart"} disabled={isCartEmpty}>
-          <HiOutlineShoppingCart />
-          <small>{totalQuantity}</small>
+          <HiOutlineShoppingCart className='icon-cart'/>
+          <small className='total-quantity' >{totalQuantity}</small>
         </Link>
       </div>
     </>

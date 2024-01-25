@@ -23,7 +23,7 @@ const ItemDetail = ({ producto }) => {
        <Stack mt='6' spacing='3'>
          <Heading size='md'>{producto.titulo}</Heading>
          <Text>{producto.descripcion}</Text>
-         <Text className='detail-precio'>{producto.precio}</Text>
+         <Text className='detail-precio'>${producto.precio}</Text>
        </Stack>
       </CardBody>
       <Divider />
