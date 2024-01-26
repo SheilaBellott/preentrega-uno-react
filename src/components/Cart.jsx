@@ -54,7 +54,7 @@ const Cart = () => {
         </div>
       )}
 
-      {cartContents.length > 0 && <p>Monto total: ${totalAmount}</p>}
+      {cartContents.length > 0 && <p>Monto total:${totalAmount}</p>}
 
       {cartContents.length > 0 && (
         <button onClick={handleFinalizarCompra} className='button-cart'>Finalizar Compra</button>
