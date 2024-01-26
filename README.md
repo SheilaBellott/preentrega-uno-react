@@ -2,8 +2,8 @@
 
 - Librerias utilizadas
   1. Charkra-ui
-  2. React-router-dom
-  3. SweetAlert
+  1. React-router-dom
+  1. SweetAlert
 
 
 =======
