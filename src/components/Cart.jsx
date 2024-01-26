@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useShoppingCart } from '../context/ShoppingCartContext';
 import Formulario from './Formulario';
@@ -41,24 +40,24 @@ const Cart = () => {
     <div className='cart'>
       <h2>Carrito</h2>
       {cartContents.length > 0 && (
-        <ul>
+        <div>
           {cartContents.map((item) => (
-            <li key={item.productId}>
+            <div key={item.productId} className="cart-item">
               <p>ID: {item.productId}</p>
               <p>Producto: {item.nombre}</p>
               <p>Cantidad: {item.quantity}</p>
               <p>Precio unitario: ${item.precio}</p>
               <p>Subtotal: ${individualSums[item.productId]}</p>
-              <button onClick={() => removeFromCart(item.productId)}>Eliminar</button>
-            </li>
+              <button onClick={() => removeFromCart(item.productId)} className='button-cart' >Eliminar</button>
+            </div>
           ))}
-        </ul>
+        </div>
       )}
 
       {cartContents.length > 0 && <p>Monto total: ${totalAmount}</p>}
 
       {cartContents.length > 0 && (
-        <button onClick={handleFinalizarCompra}>Finalizar Compra</button>
+        <button onClick={handleFinalizarCompra} className='button-cart'>Finalizar Compra</button>
       )}
 
       {mostrarFormulario && <Formulario productosSeleccionados={cartContents} />}
@@ -67,11 +66,6 @@ const Cart = () => {
 };
 
 export default Cart;
-
-
-
-
-
 
 
 

@@ -149,6 +149,7 @@ background-color: #000000;
 }
 .cart{
     color: #FFFFFF;
+    text-align: center;
 }
 .icon-cart{
     color: #FFFFFF;
@@ -157,11 +158,39 @@ background-color: #000000;
 }
 div:where(.swal2-container) div:where(.swal2-popup)
 {   
-    font-size: 15
-    
-    px;
+    font-size: 15px;
     width: 20rem;
-    color: #FFFFFF;
-    
+    color: #FFFFFF;    
 }
+
+ 
+  .cart-item {
+    border: 1px solid #f30808;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    margin: 10px 250px;
+  }
   
+  
+  .cart-item p {
+    display: inline-block;
+    padding: 0 20px;
+  }
+  .button-cart{
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .form{
+    text-align: center;
+    border: 1px solid #fff7f7;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 50px 25%;
+  }
+  .form input, button {
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 5px;
+  }

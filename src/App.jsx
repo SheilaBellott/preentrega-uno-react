@@ -6,15 +6,15 @@ import ItemDetailContainer from './components/ItemDetailContainer'
 import { Flex } from '@chakra-ui/react';
 import {ShoppingCartProvider} from './context/ShoppingCartContext'
 import Cart from './components/Cart'
+
 const App = () => {
 
   return (
   <BrowserRouter>
     <ShoppingCartProvider>
-  
-    <NavBar/>
-    
 
+    <NavBar/>
+   
       <Flex className='flex-app'>
 
 <Routes>

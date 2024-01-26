@@ -23,8 +23,9 @@ const Formulario = ({ productosSeleccionados }) => {
   };
 
   return (
-    <div>
-      <form onSubmit={handlenSubmit}>
+    <div className="form">
+        <h3>Ingrese sus datos</h3>
+      <form onSubmit={handlenSubmit} >
         <input
           type="text"
           placeholder="Nombre"
@@ -39,7 +40,7 @@ const Formulario = ({ productosSeleccionados }) => {
         />
         <button type="submit">Enviar</button>
       </form>
-      <p>{orderId}</p>
+      <p>Pedido: {orderId}</p>
     </div>
   );
 };
