@@ -1,7 +1,11 @@
-# React + Vite
+# Proyecto de React de My Ecommerce FGmuebleria
 
 <<<<<<< HEAD
 
+- Librerias utilizadas
+  1. Charkra-ui
+  2. React-router-dom
+  3. SweetAlert
 
 
 =======
