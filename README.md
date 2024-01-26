@@ -4,10 +4,10 @@
   2. React-router-dom
   3. SweetAlert
 
--Ecommerce : venta de muebles
--Cuenta con 3 categorias : mesas , sillas y zapateros.
--Base de datos : Firebase
--
+- Ecommerce : venta de muebles
+- Cuenta con 3 categorias : mesas , sillas y zapateros.
+- Base de datos : Firebase
+
 
 
 =======
