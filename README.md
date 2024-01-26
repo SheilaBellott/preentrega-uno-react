@@ -1,6 +1,12 @@
-# React + Vite
+# Proyecto de React de My Ecommerce FGmuebleria
+- Librerias utilizadas
+  1. Charkra-ui
+  2. React-router-dom
+  3. SweetAlert
 
-<<<<<<< HEAD
+- Ecommerce : venta de muebles
+- Cuenta con 3 categorias : mesas , sillas y zapateros.
+- Base de datos : Firebase
 
 
 
