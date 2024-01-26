@@ -1,4 +1,3 @@
-// ShoppingCartContext.js
 
 import React, { createContext, useContext, useState } from 'react';
 
@@ -24,8 +23,8 @@ export const ShoppingCartProvider = ({ children }) => {
         {
           productId: product.id,
           quantity,
-          nombre: product.titulo, // Agregar el nombre del producto
-          precio: product.precio, // Agregar el precio del producto
+          nombre: product.titulo, 
+          precio: product.precio, 
         },
       ]);
     }
