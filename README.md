@@ -1,9 +1,9 @@
 # Proyecto de React de My Ecommerce FGmuebleria
 
 - Librerias utilizadas
-  _Charkra-ui
-  _React-router-dom
-  _SweetAlert
+  1. Charkra-ui
+  2. React-router-dom
+  3. SweetAlert
 
 
 =======
