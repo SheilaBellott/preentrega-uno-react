@@ -23,17 +23,17 @@ a{
     left: 132%;
 
 }
-.menu-list{
-    padding: 5px;
-    font-size: 15px;
-color: #FFFFFF !important;    
+.menu-list{   
+    font-size: 15px;  
     background-color: #000000;
     position: relative;
-    left: 15%;
     bottom: 25px;
    border-radius: 3px;
    border-color:#FFFFFF;
    border-width: 0.1px;
+ &:hover{
+    background-color: #b9b1b171;
+ }
     
 }
 .tittle-cell{
