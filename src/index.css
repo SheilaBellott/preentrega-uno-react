@@ -20,7 +20,7 @@ a{
 .nav-cart{
     position: relative;
     top:20px;
-    left: 205%;
+    left: 132%;
 
 }
 .menu-list{
@@ -103,12 +103,12 @@ color: #FFFFFF !important;
 
 
 .nav-bar{
-    width: 50rem;
+    width: 100%;
     display: flex;
     align-items: center;
     position: relative;
     left: 5%;
-    bottom: 20px;
+    bottom: 2px;
     font-size: 20px;
     background-color: #000000;
    
@@ -122,12 +122,12 @@ color: #FFFFFF !important;
 
 
 .input{
-    
-    position: relative;
-    top:20px;
-    left: 200%;
+    height: 17px;
+    width: 290px;
     border-radius: 20px;
     padding: 5px;
+    color: rgb(0, 0, 0);
+    background-color: white
 }
 .flex-app{
 justify-content: space-around;
@@ -193,4 +193,13 @@ div:where(.swal2-container) div:where(.swal2-popup)
     margin: 0 10px;
     padding: 5px;
     border-radius: 5px;
+  }
+  .footer{
+    color: #FFFFFF ;
+    display: inline !important;
+  }
+  .footer a{
+    color: #FFFFFF ;
+    padding: 5px;
+    
   }
